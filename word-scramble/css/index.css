@@ -1,0 +1,152 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #5372f0;
+}
+
+.container {
+    width: 450px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container h2 {
+    font-weight: 500;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .content {
+    margin: 25px 20px 35px;
+}
+
+.content .word {
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 24px;
+    margin-right: -24px;
+    word-break: break-all;
+}
+
+.content .details {
+    margin: 25px 0 20px;
+}
+
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b {
+    font-weight: 500;
+}
+
+.content input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.content input:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.content input::placeholder {
+    color: #aaa;
+}
+
+.content input:focus::placeholder {
+    color: #bfbfbf;
+}
+
+.content .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    width: calc(100% / 2 - 8px);
+    padding: 15px 0;
+    font-size: 17px;
+    transition: all ease 0.3s;
+}
+
+.buttons button:active {
+    transform: scale(0.97);
+}
+
+.buttons .refresh-word {
+    background: #6c757d;
+}
+
+.buttons .refresh-word:hover {
+    background: #5f666d;
+}
+
+.buttons .restart-word {
+    background: #ff0000;
+}
+
+.buttons .restart-word:hover {
+    background: #ce0000;
+}
+
+.buttons .submit-word {
+    background: #5372f0;
+}
+
+.buttons .submit-word:hover {
+    background: #2c52ed;
+}
+
+@media screen and (max-width: 470px) {
+    .container h2 {
+        font-size: 22px;
+        padding: 13px 20px;
+    }
+    .content .word {
+        font-size: 30px;
+        letter-spacing: 20px;
+        margin-right: -20px;
+    }
+    .container .content {
+        margin: 20px 20px 30px;
+    }
+    .details p {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .content input {
+        height: 55px;
+        font-size: 17px;
+    }
+    .buttons button {
+        padding: 14px 0;
+        font-size: 16px;
+        width: calc(100% / 2 - 7px);
+    }
+}
